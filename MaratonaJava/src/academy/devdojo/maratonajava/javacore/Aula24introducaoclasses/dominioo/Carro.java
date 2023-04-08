@@ -4,4 +4,6 @@ public class Carro {
     public String nome;
     public String marca;
     public int ano;
+    public int cavalosDePotencia = 0;
+    
 }
