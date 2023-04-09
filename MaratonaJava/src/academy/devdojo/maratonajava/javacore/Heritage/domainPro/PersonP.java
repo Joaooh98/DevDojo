@@ -6,6 +6,15 @@ public class PersonP {
     protected String name;
     protected String cpf;
     protected AddressP address;
+    static{
+        System.out.println("dentro do bloco estatico estatico pessoa00");
+    }
+    {
+        System.out.println("dentro do bloco  estatico pessoa01");
+    }
+    {
+        System.out.println("dentro do bloco  estatico pessoa02");
+    }
 
     public PersonP(String name){
         this.name = name;
