@@ -1,8 +1,8 @@
-package academy.devdojo.maratonajava.javacore.Heritage.test;
+package academy.devdojo.maratonajava.javacore.Class31Heritage.test;
 
-import academy.devdojo.maratonajava.javacore.Heritage.domain.Address;
-import academy.devdojo.maratonajava.javacore.Heritage.domain.Employee;
-import academy.devdojo.maratonajava.javacore.Heritage.domain.PersonF;
+import academy.devdojo.maratonajava.javacore.Class31Heritage.domain.Address;
+import academy.devdojo.maratonajava.javacore.Class31Heritage.domain.Employee;
+import academy.devdojo.maratonajava.javacore.Class31Heritage.domain.PersonF;
 
 // henração tem um alto acoplamento entre os objetos  
 public class InheritanceTest01 {

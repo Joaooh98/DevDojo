@@ -1,8 +1,13 @@
-package academy.devdojo.maratonajava.javacore.Overwrite.domain;
+package academy.devdojo.maratonajava.javacore.Class32Overwrite.domain;
 
-public class Anime {
+public class Anime extends Object {
     private String name;
     
+    // Sobrescrita do método toString
+    @Override
+    public String toString(){
+        return "Anime: " + this.name;
+    }
 
     public Anime(String name) {
         this.name = name;

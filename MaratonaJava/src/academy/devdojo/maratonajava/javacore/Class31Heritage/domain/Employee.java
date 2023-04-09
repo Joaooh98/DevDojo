@@ -1,4 +1,4 @@
-package academy.devdojo.maratonajava.javacore.Heritage.domain;
+package academy.devdojo.maratonajava.javacore.Class31Heritage.domain;
 
 public class Employee extends PersonF{
     private String  office;

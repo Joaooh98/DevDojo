@@ -1,4 +1,4 @@
-package academy.devdojo.maratonajava.javacore.Heritage.domainPro;
+package academy.devdojo.maratonajava.javacore.Class31Heritage.domainPro;
 
 
 public class PersonP {
