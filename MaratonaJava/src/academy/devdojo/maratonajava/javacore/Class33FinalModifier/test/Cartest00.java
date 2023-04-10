@@ -7,5 +7,14 @@ public class Cartest00 {
         Car car = new Car();
         
         System.out.println(Car.LIMIT_SPEED);
+        System.out.println(car.BUYER);
+
+        car.BUYER.setName("Sr. João");
+
+        System.out.println(car.BUYER);
+        // https://www.devmedia.com.br/trabalhando-com-singleton-java/23632
+        
+        car.show();
+    
     }
 }

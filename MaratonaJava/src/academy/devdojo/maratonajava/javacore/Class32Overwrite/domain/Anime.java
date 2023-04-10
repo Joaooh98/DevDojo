@@ -8,6 +8,12 @@ public class Anime extends Object {
     public String toString(){
         return "Anime: " + this.name;
     }
+    // ou 
+    // @Override
+    // public String toString() {
+    //      return "Anime{"+
+    //             "nome'"+ name + '\'' + '}';
+    // }
 
     public Anime(String name) {
         this.name = name;
