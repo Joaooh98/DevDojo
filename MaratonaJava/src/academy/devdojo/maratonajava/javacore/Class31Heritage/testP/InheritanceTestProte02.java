@@ -5,6 +5,7 @@ import academy.devdojo.maratonajava.javacore.Class31Heritage.domainPro.EmployeeP
 public class InheritanceTestProte02 {
     public static void main(String[] args) {
         EmployeeP employeeP = new EmployeeP("Jiraya");
+        System.out.println(employeeP);
     }
 }
 /* 0 - Bloco de inicialização estatico da super classe é executado quando a JVM carregar classe Pai 
