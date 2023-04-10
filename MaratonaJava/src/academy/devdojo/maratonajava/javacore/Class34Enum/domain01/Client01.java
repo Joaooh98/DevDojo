@@ -1,16 +1,13 @@
-package academy.devdojo.maratonajava.javacore.Class34Enum.domain;
+package academy.devdojo.maratonajava.javacore.Class34Enum.domain01;
 
 
-public class Client {
-    public enum TypeOfPayment{
-        DEBITO, CREDITO
-    }
-
-    private String name;
-    private CustomerType customerType;
-    private TypeOfPayment typeOfPayment;
+public class Client01 {
     
-    public Client(String name, CustomerType customerTtype, TypeOfPayment typeOfPayment) {
+    private String name;
+    private CustomerType01 customerType;
+    private TypeOfPayment01 typeOfPayment;
+    
+    public Client01(String name, CustomerType01 customerTtype, TypeOfPayment01 typeOfPayment) {
         this.name = name;
         this.customerType = customerTtype;
         this.typeOfPayment = typeOfPayment;
