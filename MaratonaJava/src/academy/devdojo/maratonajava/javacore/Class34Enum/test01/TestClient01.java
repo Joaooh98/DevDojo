@@ -2,6 +2,7 @@ package academy.devdojo.maratonajava.javacore.Class34Enum.test01;
 
 import academy.devdojo.maratonajava.javacore.Class34Enum.domain.Client;
 import academy.devdojo.maratonajava.javacore.Class34Enum.domain.CustomerType;
+import academy.devdojo.maratonajava.javacore.Class34Enum.domain01.CustomerType01;
 import academy.devdojo.maratonajava.javacore.Class34Enum.domain01.TypeOfPayment01;
 
 public class TestClient01 {
@@ -15,9 +16,9 @@ public class TestClient01 {
     System.out.println(cli02);
         System.out.println(TypeOfPayment01.CREDITO.calculateDiscount(1000));
         System.out.println(TypeOfPayment01.DEBITO.calculateDiscount(1000));
-        TypeOfPayment01 typeOfPayment01 = TypeOfPayment01.valueOf("PESSOA_JURIDICA");
-        System.out.println(typeOfPayment01.getNomeRelatorio());
-        TypeOfPayment01 typeOfPayment02 = TypeOfPayment01.TypeOfPayment01PorNomeRelatorio("pessoa fisica221");
-        System.out.println(typeOfPayment02);
+          CustomerType01 customerType01 = CustomerType01.valueOf("PESSOA_FISICA");
+            System.out.println(customerType01.getNomeRelatorio());
+          CustomerType01 customerType02 = CustomerType01.tipoClientePorNomeRelatorio("Pessoa fisica");  
+            System.out.println(customerType02);
     }
 }

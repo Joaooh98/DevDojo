@@ -1,21 +1,18 @@
 package academy.devdojo.maratonajava.javacore.Class34Enum.domain01;
 
 public enum CustomerType01 { // todos os atributos que nao criado nessa classe e constante
-    PESSOA_JURIDICA(1,  "Pessoa fisica"),
-    PESSOA_FISICA (2, "Pessoa juridica");
+    PESSOA_JURIDICA(1,  "Pessoa juridic"),
+    PESSOA_FISICA (2, "Pessoa fisica");
 
-    private int VALOR;
-    private String NomeRelatorio;
-
-    
-
-  
-    private CustomerType01(int vALOR, String nomeRelatorio) {
-        VALOR = vALOR;
-        NomeRelatorio = nomeRelatorio;
+    private int valor;
+    private String nomeRelatorio;
+   
+    CustomerType01(int valor, String nomeRelatorio) {
+        this.valor = valor;
+        this.nomeRelatorio = nomeRelatorio;
     }
 
-    public static CustomerType01 TypeOfPayment01PorNomeRelatorio(String nomeRelatorio) {
+    public static CustomerType01 tipoClientePorNomeRelatorio(String nomeRelatorio){
         for (CustomerType01 customerType01 : values()){
             if(customerType01.getNomeRelatorio().equals(nomeRelatorio)){
                 return customerType01;
@@ -24,16 +21,17 @@ public enum CustomerType01 { // todos os atributos que nao criado nessa classe e
         return null;
     }
     /**
-     * @return int return the VALOR
+     * @return int return the valor
      */
-    public int getVALOR() {
-        return VALOR;
+    public int getValor() {
+        return valor;
     }
+
     /**
-     * @return String return the NomeRelatorio
+     * @return String return the nomeRelatorio
      */
     public String getNomeRelatorio() {
-        return NomeRelatorio;
+        return nomeRelatorio;
     }
 
 }

@@ -18,7 +18,7 @@ public class Client01 {
         return "Client{" + 
                 " name ='" + name + '\'' +
                 ", customer Type="+customerType.getNomeRelatorio()+
-                ", customer TypeInt="+customerType.getVALOR()+
+                ", customer TypeInt="+customerType.getValor()+
                 ", Type Of Pagyment="+typeOfPayment+'}';
     }  
 
