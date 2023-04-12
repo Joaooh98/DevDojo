@@ -1,6 +1,7 @@
 package academy.devdojo.maratonajava.javacore.Class37Polimorfismo.Service;
 
 import academy.devdojo.maratonajava.javacore.Class37Polimorfismo.Domain.Computer;
+// import academy.devdojo.maratonajava.javacore.Class37Polimorfismo.Domain.Product;
 import academy.devdojo.maratonajava.javacore.Class37Polimorfismo.Domain.Tomate;
 
 public class CalculateTax {
@@ -21,4 +22,14 @@ public class CalculateTax {
         System.out.println("Valor do tomate(tomate value): " + tomate.getValor());
         System.out.println("imposto a ser pago(Tax to be paid): " + tax);
     }
+// realizado o processo no CalculateTax02
+    // public static void calcularImposto(Product product){
+    //     System.out.println("Relatori de imposto ");
+    //     double tax = product.calcularImposto();
+    //     System.out.println("Nome do produto: " + product.getName());
+    //     System.out.println("Valor do produto: "+product.getValor());
+    //     System.out.println("Imposto a ser paga do produto: " + tax);
+
+    // }
+
 }
