@@ -1,7 +1,6 @@
 package academy.devdojo.maratonajava.javacore.Class35AbstractClasses.Test;
 
 import academy.devdojo.maratonajava.javacore.Class35AbstractClasses.Domain.Developer;
-import academy.devdojo.maratonajava.javacore.Class35AbstractClasses.Domain.Employee;
 import academy.devdojo.maratonajava.javacore.Class35AbstractClasses.Domain.Manager;
 
 public class EmployeeTest00 {
