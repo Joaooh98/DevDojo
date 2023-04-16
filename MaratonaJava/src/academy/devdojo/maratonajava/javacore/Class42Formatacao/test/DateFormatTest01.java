@@ -4,6 +4,7 @@ import java.text.DateFormat;
 import java.util.Calendar;
 
 public class DateFormatTest01 {
+    // https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html
     public static void main(String[] args) {
         Calendar c = Calendar.getInstance();
         DateFormat[] df = new DateFormat[7];

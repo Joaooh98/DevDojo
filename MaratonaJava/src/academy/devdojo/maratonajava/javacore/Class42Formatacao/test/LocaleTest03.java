@@ -5,6 +5,7 @@ import java.util.Set;
 import java.util.Locale.IsoCountryCode;
 
 public class LocaleTest03 {
+    // https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html documentação 
     public static void main(String[] args) {
         System.out.println(Locale.getDefault()); // retorna em qual lingua esta o seu computador
         String[] isoContries = Locale.getISOCountries();

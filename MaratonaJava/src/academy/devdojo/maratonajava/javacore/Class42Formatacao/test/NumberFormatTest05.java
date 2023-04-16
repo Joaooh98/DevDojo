@@ -1,10 +1,12 @@
 package academy.devdojo.maratonajava.javacore.Class42Formatacao.test;
 
 import java.text.NumberFormat;
+import java.text.ParseException;
 import java.util.Locale;
 
 
 public class NumberFormatTest05 {
+    // https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html
     public static void main(String[] args) {
         Locale localeBR = new Locale("pt", "BR");
         Locale localeJP = Locale.JAPAN;
@@ -16,16 +18,21 @@ public class NumberFormatTest05 {
         nfa[2] = NumberFormat.getCurrencyInstance(localeJP);
         nfa[3] = NumberFormat.getCurrencyInstance(localeIT);
 
-        double valor = 10_00.2130;
+        double valor = 1000.2130;
+        
 
         for (NumberFormat numberFormat : nfa) {
+            System.out.println(numberFormat.getMaximumFractionDigits());
+            // numberFormat.setMaximumFractionDigits(3);
             System.out.println(numberFormat.format(valor));
         }
 
+        String valorString = "￥1,000";
 
-        
-
-        
-        
+        try {
+            System.out.println(nfa[0].parse(valorString));
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
     }
 }
