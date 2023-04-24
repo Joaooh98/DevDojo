@@ -1,7 +1,6 @@
 package academy.devdojo.maratonajava.javacore.Class38Exception.Runtime.test;
 
 import java.io.FileNotFoundException;
-import java.io.IOException;
 import java.sql.SQLException;
 
 public class RuntimeExeptionTest04 {
@@ -30,10 +29,7 @@ public class RuntimeExeptionTest04 {
             e.printStackTrace();
         } catch (FileNotFoundException e){
             e.printStackTrace();
-        } catch (IOException e){
-            e.printStackTrace();
-        }
-        
+        }        
     } 
 
     private static void talvezlanceException() throws SQLException, FileNotFoundException{

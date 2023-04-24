@@ -35,5 +35,26 @@ public class WrapperTest01 {
         System.out.println(verdade);
 
         System.out.println(Character.isDigit(charP));
+
+        System.out.println(intW1);
+        System.out.println(i);
+
+        System.out.println(byteP);
+        System.out.println(shortP);
+        System.out.println(intP);
+        System.out.println(longP);
+        System.out.println(floatP);
+        System.out.println(doubleP);
+        System.out.println(booleanP);
+
+        System.out.println(byteW);
+        System.out.println(shortW);
+        System.out.println(intW);
+        System.out.println(longW);
+        System.out.println(floatW);
+        System.out.println(doubleW);
+        System.out.println(charW);
+        System.out.println(booleanW);
+        
     }
 }
