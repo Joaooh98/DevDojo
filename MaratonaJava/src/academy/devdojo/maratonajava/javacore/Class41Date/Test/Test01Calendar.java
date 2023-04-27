@@ -3,7 +3,7 @@ package academy.devdojo.maratonajava.javacore.Class41Date.Test;
 import java.util.Date;
 import java.util.Calendar;
 
-public class CalendarTest01 {
+public class Test01Calendar {
     public static void main(String[] args) {
         
         Calendar c = Calendar.getInstance(); 

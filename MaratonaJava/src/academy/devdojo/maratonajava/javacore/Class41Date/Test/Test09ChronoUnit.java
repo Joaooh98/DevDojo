@@ -4,7 +4,7 @@ import java.time.LocalDateTime;
 import java.time.Month;
 import java.time.temporal.ChronoUnit;
 
-public class ChronoUnitTest09 {
+public class Test09ChronoUnit {
     public static void main(String[] args) {
         var aniversario = LocalDateTime.of(1998, Month.JULY, 4, 9, 0, 0);
         var now = LocalDateTime.now();

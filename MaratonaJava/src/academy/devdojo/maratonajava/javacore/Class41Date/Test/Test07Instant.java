@@ -3,7 +3,7 @@ package academy.devdojo.maratonajava.javacore.Class41Date.Test;
 import java.time.Instant;
 import java.time.LocalDateTime;
 
-public class InstantTest06 {
+public class Test07Instant {
     public static void main(String[] args) {
         Instant now = Instant.now();
         System.out.println(

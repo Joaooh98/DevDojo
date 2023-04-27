@@ -6,7 +6,7 @@ import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.time.temporal.ChronoUnit;
 // duration nao aceita LocalDate
-public class DurationTest01 {
+public class Test03Duration {
     public static void main(String[] args) {
         var now = LocalDateTime.now();
         var nowAFterTwoYears = LocalDateTime.now().plusYears(2);

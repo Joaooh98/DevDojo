@@ -4,7 +4,7 @@ import java.time.LocalDate;
 import java.time.Period;
 import java.time.temporal.ChronoUnit;
 
-public class PeriodTest07 {
+public class Test08Period {
     public static void main(String[] args) {
         // formato  PDD/MM/YY PDIAS/MES/ANO
         var CurrentDate =  LocalDate.now();

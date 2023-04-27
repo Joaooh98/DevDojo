@@ -3,7 +3,7 @@ package academy.devdojo.maratonajava.javacore.Class41Date.Test;
 import java.time.LocalTime;
 import java.time.temporal.ChronoField;
 
-public class LocalTimeTest04 {
+public class Test05LocalTime {
     public static void main(String[] args) {
         LocalTime timeCurrent = LocalTime.now(); /// para mostra a hora atual
         System.out.println(timeCurrent);
