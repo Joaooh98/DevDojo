@@ -1,4 +1,4 @@
-package academy.devdojo.maratonajava.javacore.ResourceBundle.test;
+package academy.devdojo.maratonajava.javacore.Class43ResourceBundle.test;
 
 import java.util.Locale;
 import java.util.ResourceBundle;
@@ -16,3 +16,4 @@ public class ResourceBundleTest01 {
 
     }
 }
+ 
