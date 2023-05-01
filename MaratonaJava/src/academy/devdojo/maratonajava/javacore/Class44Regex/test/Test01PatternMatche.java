@@ -11,22 +11,22 @@ public class Test01PatternMatche {
 
         Pattern pattern = Pattern.compile(regex);
         Matcher matcher = pattern.matcher(text);
-        
-        System.out.println("  text:"+text);
+
+        System.out.println("  text:" + text);
         System.out.println("indcie:0123456789");
-        System.out.println("Regex: "+regex);
+        System.out.println("Regex: " + regex);
         System.out.println("posições encontradas: ");
         while (matcher.find()) {
-            System.out.print(matcher.start()+" "+matcher.group()+"\n");
-        }        
+            System.out.print(matcher.start() + " " + matcher.group() + "\n");
+        }
 
         Matcher matcher1 = pattern.matcher(text1);
-        System.out.println("  text:"+text1);
+        System.out.println("  text:" + text1);
         System.out.println("indcie:0123456789");
-        System.out.println("Regex: "+regex);
+        System.out.println("Regex: " + regex);
         System.out.println("posições encontradas: ");
         while (matcher1.find()) {
-            System.out.print(matcher1.start()+" "+matcher1.group()+"\n");
-        }        
+            System.out.print(matcher1.start() + " " + matcher1.group() + "\n");
+        }
     }
 }

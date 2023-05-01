@@ -3,16 +3,9 @@ package academy.devdojo.maratonajava.javacore.Class44Regex.test;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-    public class Test02PatternMatche {
-        public static void main(String[] args) {
-            /*
-            * Expressões regulares (meta caractere)
-            * 
-            * Ao utilizar o caractere
-            * "\" em uma String no Java, é necessário inserir outro "\" antes do mesmo,
-            * para que o Java possa identificar que se trata de um metacaractere sendo
-            * passado.
-            * segue os exemplos basicos de algumas expressoes regulares 
+public class Test03PatternMatche {
+    public static void main(String[] args) {
+            /* segue os exemplos basicos de algumas expressoes regulares 
             * 
             * \d = todos os digitos exemplo: "a1s2s3s4s5s6fdf".
             * \D = tudo que nao for digito exemplo: "a1s2s3s4s5s@#6fdf".
@@ -35,5 +28,5 @@ import java.util.regex.Pattern;
                 System.out.print("posição " + matcher.start() + " valor:" + matcher.group() + "\n");
             }
 
-        }
     }
+}
