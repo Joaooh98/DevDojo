@@ -1,0 +1,5 @@
+Em Java, IO (Input/Output) é um conceito importante para lidar com entrada e saída de dados em um programa. A classe BufferedReader é uma classe de IO em Java que permite ler dados de um fluxo de entrada de caracteres (como um arquivo de texto) de forma eficiente.
+
+Em vez de ler um caractere por vez, como faz a classe FileReader, por exemplo, a classe BufferedReader lê uma quantidade maior de caracteres em um buffer interno, reduzindo o número de acessos ao fluxo de entrada e tornando o processo mais rápido.
+
+Para usar a classe BufferedReader, primeiro é necessário criar um objeto dessa classe passando um objeto de fluxo de entrada como parâmetro. Por exemplo, para ler um arquivo de texto, pode-se criar um objeto FileReader e passá-lo para o construtor de BufferedReader:
