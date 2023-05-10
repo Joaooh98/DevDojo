@@ -5,7 +5,7 @@ import academy.devdojo.maratonajava.javacore.Aula25introducaoMetodos.Dominio.MyC
 public class MyCalculatorController {
     public static void main(String[] args) {
         var MyCalculator = new MyCalculator();
-
+        
         
     }
 }
