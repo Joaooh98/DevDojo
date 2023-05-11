@@ -2,20 +2,15 @@ package academy.devdojo.maratonajava.javacore.Aula25introducaoMetodos.Dominio;
 
 public class MyCalculator {
     
-    private double teclado;
+    private Double numberOne;
 
-    private double resultado;
+    private Double numbertwo;
 
-    public void somar() {
-        
-    }
+    private Double resultado;
 
-    public double getTeclado() {
-        return teclado;
-    }
-
-    public void setTeclado(double teclado) {
-        this.teclado = teclado;
+    public Double somar(Double numberOne, Double numbertwo) {
+        resultado = this.numberOne + this.numbertwo;
+        return resultado;
     }
 
     public double getResultado() {
@@ -26,5 +21,20 @@ public class MyCalculator {
         this.resultado = resultado;
     }
 
-    
+    public double getNumberOne() {
+        return numberOne;
+    }
+
+    public void setNumberOne(double numberOne) {
+        this.numberOne = numberOne;
+    }
+
+    public Double getNumbertwo() {
+        return numbertwo;
+    }
+
+    public void setNumbertwo(Double numbertwo) {
+        this.numbertwo = numbertwo;
+    }
+
 }
