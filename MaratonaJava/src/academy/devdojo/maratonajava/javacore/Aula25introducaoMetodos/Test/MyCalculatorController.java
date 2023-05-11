@@ -7,13 +7,13 @@ import academy.devdojo.maratonajava.javacore.Aula25introducaoMetodos.Dominio.MyC
 public class MyCalculatorController {
     public static void main(String[] args) {
         var calc = new MyCalculator();
-        Scanner t = new Scanner(System.in);
-
-        System.out.print("digite um numero:");
-        // calc.this.getNumberOne(t.nextDouble());
-        
-
-
-
+        try (Scanner t = new Scanner(System.in)) {
+            System.out.println("digite um numero:");
+            double num1 = t.nextDouble();
+            System.out.println("digite outro numero:");
+            double num2 = t.nextDouble();
+            calc.somar(num1, num2);
+            System.out.println(calc.getResultado());
+        }
     }
 }
