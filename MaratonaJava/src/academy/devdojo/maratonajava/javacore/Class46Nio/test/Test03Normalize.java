@@ -3,7 +3,7 @@ package academy.devdojo.maratonajava.javacore.Class46Nio.test;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
-public class NormalizeTest03 {
+public class Test03Normalize {
     public static void main(String[] args) {
         
         String diritorioProjeto ="home/joao/dev";

@@ -6,7 +6,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.StandardCopyOption;
 
-public class PathTest02 {
+public class Test02Path {
     public static void main(String[] args) throws IOException{
 
         Path pasta = Paths.get("pasta"); // equivalente  a  (new File()pasta)

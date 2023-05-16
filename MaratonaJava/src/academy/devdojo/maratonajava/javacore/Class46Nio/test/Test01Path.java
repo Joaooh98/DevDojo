@@ -2,7 +2,7 @@ package academy.devdojo.maratonajava.javacore.Class46Nio.test;
 
 import java.nio.file.Paths;
 
-public class PathTest01 {
+public class Test01Path {
     public static void main(String[] args) {
         var p1 = Paths.get("/home/joao/Documentos/DevDojo/textClass46NIO.txt");
         var p2 = Paths.get("/home/joao/Documentos/DevDojo","textClass46NIO.txt");
