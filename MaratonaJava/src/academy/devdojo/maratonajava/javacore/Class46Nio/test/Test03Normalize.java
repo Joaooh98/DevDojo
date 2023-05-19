@@ -12,6 +12,7 @@ public class Test03Normalize {
         Path path01 = Paths.get(diritorioProjeto, arquivoTxt);
         System.out.println(path01);
         System.out.println(path01.normalize());
+        
         Path path02 = Paths.get("home/./joao/./dev");
         System.out.println(path02);
         System.out.println(path02.normalize());
