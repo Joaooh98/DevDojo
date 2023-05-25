@@ -9,6 +9,7 @@ import java.nio.file.attribute.FileTime;
 import java.time.LocalDateTime;
 import java.time.ZoneOffset;
 
+@SuppressWarnings("all")
 public class Test06BasicFileAttributes {
     public static void main(String[] args) throws IOException {
         LocalDateTime date = LocalDateTime.now().minusDays(10);

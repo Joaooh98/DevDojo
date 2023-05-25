@@ -5,7 +5,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.StandardCopyOption;
-
+@SuppressWarnings("all")
 public class Test02Path {
     public static void main(String[] args) throws IOException{
 
