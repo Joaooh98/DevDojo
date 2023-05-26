@@ -29,9 +29,14 @@ public class Smartphone {
         Smartphone smartphone = (Smartphone) obj;
 
         return (serialNumber != null && serialNumber.equals(smartphone.serialNumber)) // define a quantidade de
-        && (marca != null && marca.equals(smartphone.marca));                         // paramentros que deve ser
-                                                                                      // verificado pelo equals
-                
+                && (marca != null && marca.equals(smartphone.marca)); // paramentros que deve ser
+                                                                      // verificado pelo equals
+
+    }
+
+    @Override
+    public String toString() {
+        return "Smartphone [serialNumber=" + serialNumber + ", marca=" + marca + "]";
     }
 
     public String getSerialNumber() {

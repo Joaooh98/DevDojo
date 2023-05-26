@@ -3,47 +3,37 @@ package academy.devdojo.maratonajava.javacore.ColecoesClass50.test;
 import java.util.ArrayList;
 import java.util.List;
 
+import academy.devdojo.maratonajava.javacore.ColecoesClass50.domain.Smartphone;
+
 public class A04List {
     public static void main(String[] args) {
-        List<String> nomes0 = new ArrayList<>(16);
 
-        List<String> nomes = new ArrayList<>(16);
-        
-        nomes.add("Jao");
-        nomes.add("May");
-        nomes.remove(0); // assim ele retira da lista o primeiro index
-        nomes.remove("Jao");
-        
-        nomes.add("Jao");
-        System.out.println(nomes.remove("jao")); // retorna um booleano devido utilizar o equals para combarar deve ser passado o valor conforme esta declarado.
-        System.out.println(nomes.remove("Jao"));
-        nomes.add("Jao");
+        var s1 = new Smartphone("1ABC1", "IPHONE11");
+        var s2 = new Smartphone("1ABC1", "IPHONE12");
+        var s3 = new Smartphone("22222", "IPHONE13");
+        List<Smartphone> Smartphones = new ArrayList<>(6);
 
-        // adionando todos os valors de uma lista em outra 
-        // nomes0.addAll(nomes);
+        Smartphones.add(s1);
+        Smartphones.add(s2);
+        Smartphones.add(s3);
+        // Smartphones.clear(); // limpa o o conteudo do objeto
 
-        System.out.println("\n utilizando foreach");
-
-        for (String name : nomes) {
-            System.out.println(name);
+        for (Smartphone smartphone : Smartphones) {
+            System.out.println(smartphone);
         }
 
-        System.out.println("\n utilizando for");
-
-        nomes.add("Joao");
-        for (int i = 0; i < nomes.size(); i++) {
-            System.out.println(nomes.get(i));
-        }
-
-        System.out.println("\n utilizando stream");
+        System.out.println("com stream");
         
-        nomes.add("Mayety");
-        nomes.stream()
-                .forEach(e -> System.out.println(e));
-        
-                nomes0.addAll(nomes);
-                System.out.println("\n nomes0.addAll(nomes);");
-        nomes0.stream()
-                .forEach(e-> System.out.println(e));
+        Smartphones.stream()
+                    .forEach(e -> System.out.println(e));
+
+        var s4 = new Smartphone("22222", "IPHONE13");
+        // caso nao seja passado no parametro algum array que ja esta na lista ou declarado Smartphones.add(s4); o
+        // metodo equals nao vai localizar o indice do array
+
+        System.out.println(Smartphones.contains(s4)); //  retorna um valor booleano 
+        int indexs4 = Smartphones.indexOf(s4); // verifica se esse indice desse objeto exite dentro do arrays, se nao  retorna -1
+        System.out.println(Smartphones.get(indexs4)); // caso retorne o index sera imprido valor 
+
     }
 }
