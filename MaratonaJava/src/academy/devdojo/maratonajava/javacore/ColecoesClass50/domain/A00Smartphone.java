@@ -1,10 +1,10 @@
 package academy.devdojo.maratonajava.javacore.ColecoesClass50.domain;
 
-public class Smartphone {
+public class A00Smartphone {
     private String serialNumber;
     private String marca;
 
-    public Smartphone(String serialNumber, String marca) {
+    public A00Smartphone(String serialNumber, String marca) {
         this.serialNumber = serialNumber;
         this.marca = marca;
     }
@@ -18,6 +18,15 @@ public class Smartphone {
     // para x diferente null, x.equals(null) tem que retornar false
 
     @Override
+    public int hashCode() {
+        final int prime = 31;
+        int result = 1;
+        result = prime * result + ((serialNumber == null) ? 0 : serialNumber.hashCode());
+        result = prime * result + ((marca == null) ? 0 : marca.hashCode());
+        return result;
+    }
+
+    @Override
     public boolean equals(Object obj) {
 
         if (obj == null)
@@ -26,14 +35,14 @@ public class Smartphone {
             return true;
         if (this.getClass() != obj.getClass())
             return false;
-        Smartphone smartphone = (Smartphone) obj;
+        A00Smartphone smartphone = (A00Smartphone) obj;
 
         return (serialNumber != null && serialNumber.equals(smartphone.serialNumber)) // define a quantidade de
                 && (marca != null && marca.equals(smartphone.marca)); // paramentros que deve ser
                                                                       // verificado pelo equals
 
     }
-
+    
     @Override
     public String toString() {
         return "Smartphone [serialNumber=" + serialNumber + ", marca=" + marca + "]";
