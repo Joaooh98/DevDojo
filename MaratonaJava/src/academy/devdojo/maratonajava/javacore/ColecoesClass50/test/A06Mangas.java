@@ -23,5 +23,9 @@ public class A06Mangas {
             System.out.println("-------------------");
         mangas.stream()
         .forEach(e->System.out.println(e));
+
+        for (A01Sort a01Sort : mangas) {
+            System.out.println(a01Sort);
+        }
     }
 }
