@@ -2,11 +2,10 @@ package academy.devdojo.maratonajava.javacore.ColecoesClass50.domain;
 
 import java.util.Objects;
 
-public class A01Sort implements Comparable<A01Sort>{
+public class A01Sort implements Comparable<A01Sort> {
     private Long id;
     private String name;
     private double preco;
-    
 
     public A01Sort(Long id, String name, double preco) {
         Objects.requireNonNull(id, "identificador nao pode ser null");
@@ -84,14 +83,22 @@ public class A01Sort implements Comparable<A01Sort>{
     @Override
     public int compareTo(A01Sort referenc) {
 
-        if (this.id < referenc.getId()) { // negativo se o this < referenc
-            return -1;
-        }
-        else if (this.id.equals(referenc.getId())) {// se this == referenc, return 0
-            return 0;
-        }
-        else {// positivo se this > referenc
-            return 1;
-        }
+        // if (this.id < referenc.getId()) { // negativo se o this < referenc
+        // return -1;
+        // }
+        // else if (this.id.equals(referenc.getId())) {// se this == referenc, return 0
+        // return 0;
+        // }
+        // else {// positivo se this > referenc
+        // return 1;
+        // }
+        return this.name.compareTo(referenc.getName());
+        // return Double.compare(preco, referenc.getPreco());
+        // return Double.valueOf(preco).compareTo(referenc.getPreco());
+        // return this.id.compareTo(referenc.getId()); /// executa o mesmo resultada do
+        // codigo comentado acima
+        
+        // nao e possivel utilizar esse metodo caso seja um tipo primitivo lembrando que
+        // o 'id' e o wapper
     }
 }
