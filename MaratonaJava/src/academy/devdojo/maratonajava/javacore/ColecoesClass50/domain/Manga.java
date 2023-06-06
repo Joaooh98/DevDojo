@@ -2,12 +2,13 @@ package academy.devdojo.maratonajava.javacore.ColecoesClass50.domain;
 
 import java.util.Objects;
 
-public class A01Sort implements Comparable<A01Sort> {
+public class Manga implements Comparable<Manga> {
     private Long id;
     private String name;
     private double preco;
+    private int quantidade;
 
-    public A01Sort(Long id, String name, double preco) {
+    public Manga(Long id, String name, double preco) {
         Objects.requireNonNull(id, "identificador nao pode ser null");
         Objects.requireNonNull(name, "nome nao pode ser null");
         this.id = id;
@@ -15,9 +16,14 @@ public class A01Sort implements Comparable<A01Sort> {
         this.preco = preco;
     }
 
+    public Manga(Long id, String name, double preco, int quantidade) {
+        this(id, name, preco); 
+        this.quantidade = quantidade;
+    }
+
     @Override
     public String toString() {
-        return "A01Sort [id=" + id + ", name=" + name + ", preco=" + preco + "]";
+        return "Manga [id=" + id + ", name=" + name + ", preco=" + preco + ", quantidade=" + quantidade + "]";
     }
 
     @Override
@@ -29,6 +35,7 @@ public class A01Sort implements Comparable<A01Sort> {
         long temp;
         temp = Double.doubleToLongBits(preco);
         result = prime * result + (int) (temp ^ (temp >>> 32));
+        result = prime * result + quantidade;
         return result;
     }
 
@@ -40,18 +47,20 @@ public class A01Sort implements Comparable<A01Sort> {
             return false;
         if (getClass() != obj.getClass())
             return false;
-        A01Sort manga = (A01Sort) obj;
+        Manga other = (Manga) obj;
         if (id == null) {
-            if (manga.id != null)
+            if (other.id != null)
                 return false;
-        } else if (!id.equals(manga.id))
+        } else if (!id.equals(other.id))
             return false;
         if (name == null) {
-            if (manga.name != null)
+            if (other.name != null)
                 return false;
-        } else if (!name.equals(manga.name))
+        } else if (!name.equals(other.name))
             return false;
-        if (Double.doubleToLongBits(preco) != Double.doubleToLongBits(manga.preco))
+        if (Double.doubleToLongBits(preco) != Double.doubleToLongBits(other.preco))
+            return false;
+        if (quantidade != other.quantidade)
             return false;
         return true;
     }
@@ -80,8 +89,16 @@ public class A01Sort implements Comparable<A01Sort> {
         this.preco = preco;
     }
 
+    public int getQuantidade() {
+        return quantidade;
+    }
+
+    public void setQuantidade(int quantidade) {
+        this.quantidade = quantidade;
+    }
+
     @Override
-    public int compareTo(A01Sort referenc) {
+    public int compareTo(Manga referenc) {
 
         // if (this.id < referenc.getId()) { // negativo se o this < referenc
         // return -1;
