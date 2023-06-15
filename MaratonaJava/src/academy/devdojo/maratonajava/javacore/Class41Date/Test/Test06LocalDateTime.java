@@ -3,6 +3,7 @@ package academy.devdojo.maratonajava.javacore.Class41Date.Test;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
+import java.time.ZoneOffset;
 
 public class Test06LocalDateTime {
     public static void main(String[] args) {
@@ -21,5 +22,13 @@ public class Test06LocalDateTime {
         System.out.println(cancatenaDatapTime);
         System.out.println(cancatenaTimepDate);
 
+
+        var teste = localDateTime.toInstant(ZoneOffset.UTC).toEpochMilli(); // converte para milissegundos
+         System.out.println(teste);
+
+        var teste2 = localDateTime.plusDays(1).toInstant(ZoneOffset.UTC).toEpochMilli(); // converte para milissegundos
+         System.out.println(teste2);
+ 
     }
 }
+// toInstant(ZoneOffset.UTC).toEpochMilli()
