@@ -3,22 +3,22 @@ package academy.devdojo.maratonajava.javacore.ColecoesClass50.test;
 import java.util.ArrayList;
 import java.util.List;
 
-import academy.devdojo.maratonajava.javacore.ColecoesClass50.domain.A00Smartphone;
+import academy.devdojo.maratonajava.javacore.ColecoesClass50.domain.Smartphone;
 
 public class A04List {
     public static void main(String[] args) {
 
-        var s1 = new A00Smartphone("1ABC1", "IPHONE11");
-        var s2 = new A00Smartphone("1ABC1", "IPHONE12");
-        var s3 = new A00Smartphone("22222", "IPHONE13");
-        List<A00Smartphone> Smartphones = new ArrayList<>(6);
+        var s1 = new Smartphone("1ABC1", "IPHONE11");
+        var s2 = new Smartphone("1ABC1", "IPHONE12");
+        var s3 = new Smartphone("22222", "IPHONE13");
+        List<Smartphone> Smartphones = new ArrayList<>(6);
 
         Smartphones.add(s1);
         Smartphones.add(s2);
         Smartphones.add(s3);
         // Smartphones.clear(); // limpa o o conteudo do objeto
 
-        for (A00Smartphone smartphone : Smartphones) {
+        for (Smartphone smartphone : Smartphones) {
             System.out.println(smartphone);
         }
 
@@ -27,7 +27,7 @@ public class A04List {
         Smartphones.stream()
                     .forEach(e -> System.out.println(e));
 
-        var s4 = new A00Smartphone("22222", "IPHONE13");
+        var s4 = new Smartphone("22222", "IPHONE13");
         // caso nao seja passado no parametro algum array que ja esta na lista ou declarado Smartphones.add(s4); o
         // metodo equals nao vai localizar o indice do array
 

@@ -1,10 +1,10 @@
 package academy.devdojo.maratonajava.javacore.ColecoesClass50.domain;
 
-public class A00Smartphone {
+public class Smartphone {
     private String serialNumber;
     private String marca;
 
-    public A00Smartphone(String serialNumber, String marca) {
+    public Smartphone(String serialNumber, String marca) {
         this.serialNumber = serialNumber;
         this.marca = marca;
     }
@@ -35,7 +35,7 @@ public class A00Smartphone {
             return true;
         if (this.getClass() != obj.getClass())
             return false;
-        A00Smartphone smartphone = (A00Smartphone) obj;
+        Smartphone smartphone = (Smartphone) obj;
 
         return (serialNumber != null && serialNumber.equals(smartphone.serialNumber)) // define a quantidade de
                 && (marca != null && marca.equals(smartphone.marca)); // paramentros que deve ser
