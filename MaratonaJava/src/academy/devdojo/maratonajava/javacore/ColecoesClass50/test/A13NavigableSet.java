@@ -42,6 +42,7 @@ public class A13NavigableSet {
         manga.stream().forEach(e -> System.out.println(e));
 
         /// qual o a situcao que deve utilizar
+        
         // quando a classe que esta sendo criado a colecao, implementa Comparable caso
         /// nao esteja sendo implementado deve ter certeza que esta craido um
         /// comparator, importante resaltar que toda vez que for inserir um elemento o
