@@ -1,11 +1,11 @@
-package academy.devdojo.maratonajava.javacore.ColecoesClass50.test;
+package academy.devdojo.maratonajava.javacore.Class50Colecoes.test;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-import academy.devdojo.maratonajava.javacore.ColecoesClass50.domain.Manga;
+import academy.devdojo.maratonajava.javacore.Class50Colecoes.domain.Manga;
 
 class MangasById implements Comparator<Manga> {
 

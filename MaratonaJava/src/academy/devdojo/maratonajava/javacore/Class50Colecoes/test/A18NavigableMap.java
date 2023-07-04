@@ -1,4 +1,4 @@
-package academy.devdojo.maratonajava.javacore.ColecoesClass50.test;
+package academy.devdojo.maratonajava.javacore.Class50Colecoes.test;
 
 import java.util.NavigableMap;
 import java.util.TreeMap;

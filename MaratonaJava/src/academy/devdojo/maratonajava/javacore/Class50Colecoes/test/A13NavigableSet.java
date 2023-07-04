@@ -1,11 +1,11 @@
-package academy.devdojo.maratonajava.javacore.ColecoesClass50.test;
+package academy.devdojo.maratonajava.javacore.Class50Colecoes.test;
 
 import java.util.Comparator;
 import java.util.NavigableSet;
 import java.util.TreeSet;
 
-import academy.devdojo.maratonajava.javacore.ColecoesClass50.domain.Manga;
-import academy.devdojo.maratonajava.javacore.ColecoesClass50.domain.Smartphone;
+import academy.devdojo.maratonajava.javacore.Class50Colecoes.domain.Manga;
+import academy.devdojo.maratonajava.javacore.Class50Colecoes.domain.Smartphone;
 
 class SmartPhoneMarcaComparator implements Comparator<Smartphone> {
 

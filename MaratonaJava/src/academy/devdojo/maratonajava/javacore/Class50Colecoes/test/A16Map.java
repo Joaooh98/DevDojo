@@ -1,10 +1,10 @@
-package academy.devdojo.maratonajava.javacore.ColecoesClass50.test;
+package academy.devdojo.maratonajava.javacore.Class50Colecoes.test;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import academy.devdojo.maratonajava.javacore.ColecoesClass50.domain.Consumer;
-import academy.devdojo.maratonajava.javacore.ColecoesClass50.domain.Manga;
+import academy.devdojo.maratonajava.javacore.Class50Colecoes.domain.Consumer;
+import academy.devdojo.maratonajava.javacore.Class50Colecoes.domain.Manga;
 
 public class A16Map {
     public static void main(String[] args) {

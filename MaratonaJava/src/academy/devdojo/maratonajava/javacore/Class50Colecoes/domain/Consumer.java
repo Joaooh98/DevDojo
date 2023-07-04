@@ -1,4 +1,4 @@
-package academy.devdojo.maratonajava.javacore.ColecoesClass50.domain;
+package academy.devdojo.maratonajava.javacore.Class50Colecoes.domain;
 
 import java.util.Objects;
 import java.util.concurrent.ThreadLocalRandom;

@@ -1,10 +1,10 @@
-package academy.devdojo.maratonajava.javacore.ColecoesClass50.test;
+package academy.devdojo.maratonajava.javacore.Class50Colecoes.test;
 
 import java.util.HashSet;
 import java.util.LinkedHashSet;
 import java.util.Set;
 
-import academy.devdojo.maratonajava.javacore.ColecoesClass50.domain.Manga;
+import academy.devdojo.maratonajava.javacore.Class50Colecoes.domain.Manga;
 
 public class A12SeteHashSet {
     public static void main(String[] args) {

@@ -1,6 +1,6 @@
-package academy.devdojo.maratonajava.javacore.ColecoesClass50.test;
+package academy.devdojo.maratonajava.javacore.Class50Colecoes.test;
 
-import academy.devdojo.maratonajava.javacore.ColecoesClass50.domain.Smartphone;
+import academy.devdojo.maratonajava.javacore.Class50Colecoes.domain.Smartphone;
 
 public class A01Equals {
     public static void main(String[] args) {

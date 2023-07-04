@@ -1,11 +1,11 @@
-package academy.devdojo.maratonajava.javacore.ColecoesClass50.test;
+package academy.devdojo.maratonajava.javacore.Class51Genercs;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import academy.devdojo.maratonajava.javacore.ColecoesClass50.domain.Consumer;
-
-public class A22Genercs {
+import academy.devdojo.maratonajava.javacore.Class50Colecoes.domain.Consumer;
+@SuppressWarnings("all")
+public class GenercsA {
     public static void main(String[] args) {
         // como era feito
         List lista = new ArrayList();

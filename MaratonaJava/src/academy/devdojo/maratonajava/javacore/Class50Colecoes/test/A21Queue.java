@@ -1,9 +1,9 @@
-package academy.devdojo.maratonajava.javacore.ColecoesClass50.test;
+package academy.devdojo.maratonajava.javacore.Class50Colecoes.test;
 
 import java.util.PriorityQueue;
 import java.util.Queue;
 
-import academy.devdojo.maratonajava.javacore.ColecoesClass50.domain.Manga;
+import academy.devdojo.maratonajava.javacore.Class50Colecoes.domain.Manga;
 
 public class A21Queue { // 182
     public static void main(String[] args) {
