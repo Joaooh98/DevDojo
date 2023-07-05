@@ -1,7 +1,7 @@
 package academy.devdojo.maratonajava.javacore.Class51Genercs;
 
 import java.util.List;
-
+@SuppressWarnings("all")
 public class WildCardC {
     public static void main(String[] args) {
         List<Dog> dogs = List.of(new Dog(), new Dog());
@@ -24,3 +24,5 @@ public class WildCardC {
 
     }
 }
+
+//palavra-chave extends é usada para indicar que uma dada classe herda de outra.
