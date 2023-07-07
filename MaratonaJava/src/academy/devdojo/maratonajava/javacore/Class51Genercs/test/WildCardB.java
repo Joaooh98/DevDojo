@@ -1,4 +1,4 @@
-package academy.devdojo.maratonajava.javacore.Class51Genercs;
+package academy.devdojo.maratonajava.javacore.Class51Genercs.test;
 
 abstract class Animal {
     public abstract void consult();
