@@ -7,7 +7,7 @@ import java.time.ZoneOffset;
 
 public class Test06LocalDateTime {
     public static void main(String[] args) {
-        LocalDateTime localDateTime = LocalDateTime.now();
+        LocalDateTime localDateTime = LocalDateTime.of(2023, 07, 01, 1, 1);
         LocalDate date = LocalDate.parse("2022-08-06");
         LocalTime time = LocalTime.parse("23:59:59");
 
@@ -26,7 +26,7 @@ public class Test06LocalDateTime {
         var teste = localDateTime.toInstant(ZoneOffset.UTC).toEpochMilli(); // converte para milissegundos
          System.out.println(teste);
 
-        var teste2 = localDateTime.plusDays(1).toInstant(ZoneOffset.UTC).toEpochMilli(); // converte para milissegundos
+        var teste2 = localDateTime.plusDays(1).toInstant(ZoneOffset.UTC); // converte para milissegundos
          System.out.println(teste2);
  
     }
