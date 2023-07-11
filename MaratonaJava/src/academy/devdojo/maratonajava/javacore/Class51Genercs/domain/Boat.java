@@ -12,4 +12,8 @@ public class Boat {
         return "Boat [name=" + name + "]";
     }
 
+    public String getName() {
+        return name;
+    }
+
 }
