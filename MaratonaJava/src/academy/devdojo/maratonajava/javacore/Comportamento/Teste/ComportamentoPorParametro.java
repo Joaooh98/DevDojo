@@ -15,17 +15,30 @@ public class ComportamentoPorParametro {
                 new Car("Red", 2023));
                 
                 System.out.println(filterCarByColor(cars, "Red"));
+                System.out.println(filterCarByColor(cars, "Black"));
+                System.out.println(filterCarByAge(cars, 2000));
     }
     
     
     private static List<Car>filterCarByColor(List<Car> cars, String color){
-        List<Car> greenCars = new ArrayList<>();
+        List<Car> colorCars = new ArrayList<>();
         for (Car car : cars) {
             if (car.getColor().equals(color)) {
-                greenCars.add(car);
+                colorCars.add(car);
             }
         }
-        return greenCars;
+        return colorCars;
+   
+    }
+
+    private static List<Car>filterCarByAge(List<Car> cars,int year){
+        List<Car> oldCars = new ArrayList<>();
+        for (Car car : cars) {
+            if (car.getYear() < year) {
+                oldCars.add(car);
+            }
+        }
+        return oldCars;
    
     }
 
