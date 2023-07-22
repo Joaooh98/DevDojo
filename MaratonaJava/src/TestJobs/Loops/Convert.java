@@ -8,28 +8,30 @@ import java.util.List;
  */
 public class Convert {
     public static void main(String[] args) {
-        String dataHoraString = "2023-07-20 15:30:45";
-
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
-
+        
         try {
+            String dataStartString = "2023-07-20 15:30:45";
+            String dataEndString = "2023-07-21 15:30:45";
     
-            LocalDateTime localDateTime = LocalDateTime.parse(dataHoraString, formatter);
+            DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+            
+            LocalDateTime start = LocalDateTime.parse(dataStartString, formatter);
+            LocalDateTime end = LocalDateTime.parse(dataEndString, formatter);
 
-            System.out.println("LocalDateTime: " + localDateTime);
+            
+            List<LocalDateTime> dateTimeList = List.of(start, end); 
+            
+            LocalDateTime primeiroValor = dateTimeList.stream().findFirst().orElse(null);
+            LocalDateTime segundoValor = dateTimeList.stream().skip(0).findFirst().orElse(null);
+            
+                  System.out.println("Primeiro valor: " + primeiroValor);
+                  System.out.println("Segundo valor: " + segundoValor);
+            
         } catch (Exception e) {
             
             System.out.println("Erro ao converter a String em LocalDateTime: " + e.getMessage());
         }
         
-      
-        List<LocalDateTime> dateTimeList = List.of(LocalDateTime.now(), LocalDateTime.now().plusDays(1)); 
-     
-            LocalDateTime primeiroValor = dateTimeList.stream().findFirst().orElse(null);
-            LocalDateTime segundoValor = dateTimeList.stream().skip(0).findFirst().orElse(null);
-
-            System.out.println("Primeiro valor: " + primeiroValor);
-            System.out.println("Segundo valor: " + segundoValor);
       
     }
     
