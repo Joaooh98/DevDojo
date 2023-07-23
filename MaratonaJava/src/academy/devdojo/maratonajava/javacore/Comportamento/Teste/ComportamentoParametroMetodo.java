@@ -7,7 +7,7 @@ import academy.devdojo.maratonajava.javacore.Comportamento.dominio.Car;
 import academy.devdojo.maratonajava.javacore.Comportamento.interfaces.CarPredicate;
 
 public class ComportamentoParametroMetodo {
-    
+
     private static List<Car> cars = List.of(
             new Car("green", 2021),
             new Car("Black", 2022),
@@ -19,11 +19,17 @@ public class ComportamentoParametroMetodo {
 
         List<Car> carsFilter = filterMetodo(cars, new CarPredicate() {
             @Override
-            public boolean test(Car car){
+            public boolean test(Car car) {
                 return car.getColor().equals("green");
             }
         });
         System.out.println(carsFilter);
+
+        System.out.println("-------------------------------------------");
+        // sintaxe lambda
+        List<Car> carsLambdaFilter = filterMetodo(cars, car -> car.getColor().equals("green"));
+        System.out.println(carsLambdaFilter);
+
     }
 
     private static List<Car> filterMetodo(List<Car> cars, CarPredicate carPredicate) {
