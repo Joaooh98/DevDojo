@@ -3,9 +3,11 @@ package academy.devdojo.maratonajava.javacore.Lambdas.test;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.function.Function;
 
 import academy.devdojo.maratonajava.javacore.Lambdas.Service.AnimeComparators;
 import academy.devdojo.maratonajava.javacore.Lambdas.domain.Anime;
+import academy.devdojo.maratonajava.javacore.Lambdas.domain.Person;
 
 public class MethodReferencePt01 {
     public static void main(String[] args) {
@@ -28,6 +30,17 @@ public class MethodReferencePt01 {
 
         animeList.sort(AnimeComparators::compareByTitle);
         System.out.println(animeList);
-    
+
+        Function<String, String> toUpperCaseFunction = String::toUpperCase;
+
+        String resultado = toUpperCaseFunction.apply("hello");
+        System.out.println(resultado);
+
+        Person person = new Person("João");
+
+        Function<Person, String> getNomeFunction = Person::getNome;
+
+        String nome = getNomeFunction.apply(person);
+        System.out.println(nome);
     }
 }
