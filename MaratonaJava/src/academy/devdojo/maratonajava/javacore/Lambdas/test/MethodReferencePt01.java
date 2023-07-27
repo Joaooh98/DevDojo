@@ -8,7 +8,7 @@ import java.util.function.Function;
 import academy.devdojo.maratonajava.javacore.Lambdas.Service.AnimeComparators;
 import academy.devdojo.maratonajava.javacore.Lambdas.domain.Anime;
 import academy.devdojo.maratonajava.javacore.Lambdas.domain.Person;
-
+//Reference to a static method
 public class MethodReferencePt01 {
     public static void main(String[] args) {
 
