@@ -5,7 +5,7 @@ import java.util.Optional;
 import java.util.function.Predicate;
 
 import academy.devdojo.maratonajava.javacore.Optional.domain.Manga;
-
+@SuppressWarnings("all")
 public class MangaRepository {
     private static List<Manga> mangas = List.of(
             new Manga(1, "Boko", 30),
