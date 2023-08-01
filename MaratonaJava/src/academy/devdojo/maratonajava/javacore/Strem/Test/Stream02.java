@@ -3,6 +3,7 @@ package academy.devdojo.maratonajava.javacore.Strem.Test;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
+import java.util.stream.Collectors;
 
 import academy.devdojo.maratonajava.javacore.Strem.domain.LightNovel;
 
@@ -24,17 +25,14 @@ public class Stream02 {
         new LightNovel("Toradora! ", 7.99))
         );
         public static void main(String[] args) {
-            lightNovels.sort(Comparator.comparing(LightNovel::getTitle));
-            List<String> titles = new ArrayList<>();
-            for (LightNovel lightNovel : lightNovels) {
-                if(lightNovel.getPrice() <=4){
-                    titles.add(lightNovel.getTitle());
-                }
-                if (titles.size() >= 3) {
-                    break;
-                }
-            }
-            System.out.println(lightNovels);
+            
+            List<String> titles = lightNovels.stream()
+                                .sorted(Comparator.comparing(LightNovel::getTitle))
+                                .filter(ln -> ln.getPrice() <= 4)
+                                .limit(3)
+                                .map(LightNovel::getTitle)
+                                .collect(Collectors.toList());
             System.out.println(titles);
+
     }
 }
