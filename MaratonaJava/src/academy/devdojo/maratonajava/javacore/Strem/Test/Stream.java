@@ -3,6 +3,7 @@ package academy.devdojo.maratonajava.javacore.Strem.Test;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
+import java.util.stream.IntStream;
 
 import academy.devdojo.maratonajava.javacore.Strem.domain.LightNovel;
 
@@ -37,4 +38,7 @@ public class Stream {
             System.out.println(lightNovels);
             System.out.println(titles);
     }
+        public static IntStream of(String string, String string2, String string3) {
+            return null;
+        }
 }

@@ -16,7 +16,13 @@ public class StreamFlatMap02 {
         List<String[]> collect = words.stream().map(w -> w.split("")).collect(Collectors.toList());
 
         Stream<String> stream = Arrays.stream(letters);
-        List<String> letters2 = words.stream().map(w -> w.split("")).flatMap(Arrays::stream).collect(Collectors.toList());
+        List<String> letters2 = words.stream()
+        .map(w -> w
+        .split(""))
+        .flatMap(Arrays::stream)
+        .collect(
+            Collectors.toList()
+            );
 
         System.out.println(letters2);
     }
