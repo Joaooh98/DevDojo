@@ -1,11 +1,11 @@
-package academy.devdojo.maratonajava.javacore.Strem.Test;
+package academy.devdojo.maratonajava.javacore.Stream.Test;
 
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 import java.util.stream.IntStream;
 
-import academy.devdojo.maratonajava.javacore.Strem.domain.LightNovel;
+import academy.devdojo.maratonajava.javacore.Stream.domain.LightNovel;
 
 /*
 01. Order LightNovel by title

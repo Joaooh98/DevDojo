@@ -1,4 +1,4 @@
-package academy.devdojo.maratonajava.javacore.Strem.domain;
+package academy.devdojo.maratonajava.javacore.Stream.domain;
 
 public class LightNovel {
     private String title;

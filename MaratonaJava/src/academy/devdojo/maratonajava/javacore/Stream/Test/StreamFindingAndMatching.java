@@ -1,10 +1,10 @@
-package academy.devdojo.maratonajava.javacore.Strem.Test;
+package academy.devdojo.maratonajava.javacore.Stream.Test;
 
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 
-import academy.devdojo.maratonajava.javacore.Strem.domain.LightNovel;
+import academy.devdojo.maratonajava.javacore.Stream.domain.LightNovel;
 
 public class StreamFindingAndMatching {
     private static List<LightNovel> lightNovels = new ArrayList<>(List.of(

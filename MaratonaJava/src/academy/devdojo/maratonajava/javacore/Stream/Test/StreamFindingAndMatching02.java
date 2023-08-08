@@ -1,4 +1,4 @@
-package academy.devdojo.maratonajava.javacore.Strem.Test;
+package academy.devdojo.maratonajava.javacore.Stream.Test;
 
 import java.util.Arrays;
 import java.util.List;
