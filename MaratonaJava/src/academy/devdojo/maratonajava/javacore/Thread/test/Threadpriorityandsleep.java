@@ -2,7 +2,7 @@ package academy.devdojo.maratonajava.javacore.Thread.test;
 
 @SuppressWarnings("all")
 class ThreadExample extends Thread {
-    private char c;
+    private final char c;
 
     public ThreadExample(char c) {
         this.c = c;
@@ -20,7 +20,7 @@ class ThreadExample extends Thread {
     }
 }
 
-class ThreadRunnableExemple implements Runnable {
+    class ThreadRunnableExemple implements Runnable {
     private char c;
 
     public ThreadRunnableExemple(char c) {
@@ -34,21 +34,27 @@ class ThreadRunnableExemple implements Runnable {
             System.out.print(c);
             if (i % 100 == 0) {
                 System.out.println();
+            } try {
+                Thread.sleep(2000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
             }
         }
     }
 }
 
-public class ThreadRunnable {
+public class Threadpriorityandsleep {
     public static void main(String[] args) {
-        var t1 = new Thread(new ThreadRunnableExemple2('A'));
-        var t2 = new Thread(new ThreadRunnableExemple2('B'));
-        var t3 = new Thread(new ThreadRunnableExemple2('C'));
-        var t4 = new Thread(new ThreadRunnableExemple2('D'));
+        var t1 = new Thread(new ThreadRunnableExemple('A'),"T1A");
+        var t2 = new Thread(new ThreadRunnableExemple('B'),"T2B");
+        var t3 = new Thread(new ThreadRunnableExemple('C'),"T3C");
+        var t4 = new Thread(new ThreadRunnableExemple('D'),"T4D");
 
+        t4.setPriority(Thread.MAX_PRIORITY);
         t1.start();
         t2.start();
         t3.start();
         t4.start();
+        System.out.println("#######################"+Thread.currentThread().getName());
     }
 }

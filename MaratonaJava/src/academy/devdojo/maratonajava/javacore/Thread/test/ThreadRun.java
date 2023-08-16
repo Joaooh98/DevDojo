@@ -1,21 +1,21 @@
 package academy.devdojo.maratonajava.javacore.Thread.test;
 
 @SuppressWarnings("all")
-class ThreadExample extends Thread{
+class ThreadExample extends Thread {
     private char c;
-    
-    public ThreadExample(char c){
+
+    public ThreadExample(char c) {
         this.c = c;
     }
 
     @Override
-    public void run(){
+    public void run() {
         System.out.println(Thread.currentThread().getName());
         for (int i = 0; i < 200; i++) {
-        System.out.print(c);
-        if (i % 100 == 0) {
-            System.out.println();
-        }
+            System.out.print(c);
+            if (i % 100 == 0) {
+                System.out.println();
+            }
         }
     }
 }
@@ -28,6 +28,8 @@ public class ThreadRun {
         var t4 = new ThreadExample('D');
 
         t1.run();
+        t1.start();
+        // t1.start(); nao e permitido realizar 2x o start na
         t2.run();
         t3.run();
         t4.run();
