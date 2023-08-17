@@ -14,17 +14,25 @@ class ThreadRunnableExemple2 implements Runnable {
             System.out.print(c);
             if (i % 100 == 0) {
                 System.out.println();
-            } 
+            }
+            // Thread.yield();
+            try {
+                Thread.sleep(200);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
         }
     }
 }
 
 public class Threadyieldjoin {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         Thread t1 = new Thread(new ThreadRunnableExemple2("KA"));
         Thread t2 = new Thread(new ThreadRunnableExemple2("ME"));
-        
+
         t1.setPriority(Thread.MAX_PRIORITY);
+        t1.start();
+        t1.join();
         t2.start();
     }
 }
