@@ -22,6 +22,26 @@ public class Members {
             String threadName = Thread.currentThread().getName();
             System.out.println(threadName + "Email adicionado na lista");
             this.emails.add(email);
+            this.emails.notifyAll();
+        }
+    }
+
+    public String retriveEmail() throws InterruptedException{
+        System.out.println(Thread.currentThread().getName() + " Checking if there are emails ");
+        synchronized(this.emails){
+            while (this.emails.size() == 0) {
+                if (!open) break;
+                    System.out.println(Thread.currentThread().getName() + " There is no email on the list ");
+                this.emails.wait();
+            }
+            return this.emails.poll();
+        }
+    }
+
+    public void close(){
+        open = false;
+        synchronized (this.emails){
+            System.out.println(Thread.currentThread().getName() + "Notifying everyone that we are no longer receiving emails");
         }
     }
 }
