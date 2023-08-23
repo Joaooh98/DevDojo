@@ -1,6 +1,6 @@
 package academy.devdojo.maratonajava.javacore.Competition.service;
 
-import academy.devdojo.maratonajava.javacore.Thread.domain.Members;
+import academy.devdojo.maratonajava.javacore.Competition.domainTwo.Members;
 
 public class EmailDeliveryService implements Runnable {
 
