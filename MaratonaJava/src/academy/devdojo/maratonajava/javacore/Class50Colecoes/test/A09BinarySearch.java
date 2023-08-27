@@ -2,24 +2,15 @@ package academy.devdojo.maratonajava.javacore.Class50Colecoes.test;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Comparator;
 import java.util.List;
 
 import academy.devdojo.maratonajava.javacore.Class50Colecoes.domain.Manga;
-
-class MangasById implements Comparator<Manga> {
-
-    @Override
-    public int compare(Manga manga1, Manga manga2) {
-        return manga1.getId().compareTo(manga2.getId());
-    }
-
-}
+import academy.devdojo.maratonajava.javacore.Class50Colecoes.domain.MangaById;
 
 public class A09BinarySearch {
     public static void main(String[] args) {
         
-        var MangasById = new MangasById();
+        var MangasById = new MangaById();
 
         List<Manga> mangas = new ArrayList<>(6);
 
@@ -32,7 +23,7 @@ public class A09BinarySearch {
         // Collections.sort(mangas);
         mangas.sort(MangasById);
         
-         mangas.stream()
+        mangas.stream()
                 .forEach(e -> System.out.println(e));
             
         var mangaToSearch = new Manga(4L, "Dragon Ball Z", 24);

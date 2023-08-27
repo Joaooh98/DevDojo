@@ -4,6 +4,7 @@ import java.util.PriorityQueue;
 import java.util.Queue;
 
 import academy.devdojo.maratonajava.javacore.Class50Colecoes.domain.Manga;
+import academy.devdojo.maratonajava.javacore.Class50Colecoes.domain.MangaPrecoComparator;
 
 public class A21Queue { // 182
     public static void main(String[] args) {

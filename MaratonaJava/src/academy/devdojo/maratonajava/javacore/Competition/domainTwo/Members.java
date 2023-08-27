@@ -2,11 +2,13 @@ package academy.devdojo.maratonajava.javacore.Competition.domainTwo;
 
 import java.util.Queue;
 import java.util.concurrent.ArrayBlockingQueue;
+import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.ReentrantLock;
 
 public class Members {
     private final Queue<String> emails = new ArrayBlockingQueue<>(10);
     private final ReentrantLock lock = new ReentrantLock();
+    private final Condition condition = lock.newCondition();
     private boolean open = true;
 
     public boolean isOpen() {
@@ -28,7 +30,7 @@ public class Members {
             String threadName = Thread.currentThread().getName();
             System.out.println(threadName + "Email adicionado na lista");
             this.emails.add(email);
-            lock.newCondition().signalAll();
+            condition.signalAll();
         } finally {
             lock.unlock();
         }
@@ -42,7 +44,7 @@ public class Members {
                 if (!open)
                     break;
                 System.out.println(Thread.currentThread().getName() + " There is no email on the list ");
-                lock.newCondition().await();
+                condition.await();
                 ;
             }
             return this.emails.poll();
