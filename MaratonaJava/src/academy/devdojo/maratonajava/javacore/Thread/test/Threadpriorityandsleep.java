@@ -1,48 +1,8 @@
 package academy.devdojo.maratonajava.javacore.Thread.test;
 
+import academy.devdojo.maratonajava.javacore.Thread.folderToThreads.ThreadRunnableExemple;
+
 @SuppressWarnings("all")
-class ThreadExample extends Thread {
-    private final char c;
-
-    public ThreadExample(char c) {
-        this.c = c;
-    }
-
-    @Override
-    public void run() {
-        System.out.println(Thread.currentThread().getName());
-        for (int i = 0; i < 200; i++) {
-            System.out.print(c);
-            if (i % 100 == 0) {
-                System.out.println();
-            }
-        }
-    }
-}
-
-    class ThreadRunnableExemple implements Runnable {
-    private char c;
-
-    public ThreadRunnableExemple(char c) {
-        this.c = c;
-    }
-
-    @Override
-    public void run() {
-        System.out.println(Thread.currentThread().getName());
-        for (int i = 0; i < 200; i++) {
-            System.out.print(c);
-            if (i % 100 == 0) {
-                System.out.println();
-            } try {
-                Thread.sleep(2000);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-        }
-    }
-}
-
 public class Threadpriorityandsleep {
     public static void main(String[] args) {
         var t1 = new Thread(new ThreadRunnableExemple('A'),"T1A");
