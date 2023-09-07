@@ -6,13 +6,14 @@ import java.util.concurrent.TimeUnit;
 import academy.devdojo.maratonajava.javacore.Competition.domain.Discount;
 import academy.devdojo.maratonajava.javacore.Competition.domain.Quoto;
 
-public class StoreServiceWithDiscount {
+public class StoreServiceWithDiscountReal {
 
     public String getpriceSync(String storeName) {
         double price = princeGenerator();
-        int num = ThreadLocalRandom.current().nextInt(Discount.Code.values().length);
-        Discount.Code discontCode = Discount.Code.values()[num];
-        return String.format("%s:%.2f:%s", storeName, price, discontCode.name());
+        Discount.Code discontCode = Discount.Code.values()[
+            ThreadLocalRandom.current().nextInt(Discount.Code.values().length)
+            ];
+        return String.format("%s:%.2f:%s", storeName, price, discontCode);
     }
 
     public String applyDiscount(Quoto quoto){
@@ -32,7 +33,8 @@ public class StoreServiceWithDiscount {
 
     private void delay() {
         try {
-            TimeUnit.SECONDS.sleep(1);
+            int milli = ThreadLocalRandom.current().nextInt(200, 2500);
+            TimeUnit.MILLISECONDS.sleep(milli);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

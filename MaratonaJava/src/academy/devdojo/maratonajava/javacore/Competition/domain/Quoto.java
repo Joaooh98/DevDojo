@@ -1,5 +1,7 @@
 package academy.devdojo.maratonajava.javacore.Competition.domain;
 
+import java.math.BigDecimal;
+
 import academy.devdojo.maratonajava.javacore.Competition.domain.Discount.Code;
 
 @SuppressWarnings("all")
@@ -17,22 +19,23 @@ public class Quoto {
 
     /*
      * @param value containing storeName:price:discountCode
+     * 
      * @return new Quoto with values from @param value
      */
     public static Quoto newQuoto(String value) {
         String[] values = value.split(":");
-        return new Quoto(values[0], Double.parseDouble(values[1]), Discount.Code.valueOf(value));
+        String result = values[1].replace(",", ".");
+        return new Quoto(values[0], Double.parseDouble(result), Discount.Code.valueOf(values[2]));
     }
 
     @Override
     public String toString() {
         return "Quoto {" +
-                "store= '" + store + '\'' + 
+                "store= '" + store + '\'' +
                 ", price=" + price +
-                ", discountCode="+ discountCode +
+                ", discountCode=" + discountCode +
                 '}';
     }
-
 
     public String getStore() {
         return store;
