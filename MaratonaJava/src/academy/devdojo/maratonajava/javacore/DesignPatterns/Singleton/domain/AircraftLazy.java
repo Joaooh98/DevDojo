@@ -4,7 +4,6 @@ import java.util.HashSet;
 import java.util.Set;
 
 // Eager initialization
-@SuppressWarnings("all")
 public class AircraftLazy {
     private static AircraftLazy INSTANCE;
     private final Set<String> availableSeats = new HashSet<>();
