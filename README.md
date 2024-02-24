@@ -2,7 +2,7 @@
 
  Descrição:
 
-    Java é uma linguagem de programação popular, conhecida por sua portabilidade, robustez e simplicidade. Aqui estão alguns dos fundamentos essenciais que esse curso aborda, para ensinar Java:
+Java é uma linguagem de programação popular, conhecida por sua portabilidade, robustez e simplicidade. Aqui estão alguns dos fundamentos essenciais que esse curso aborda, para ensinar Java:
 
 * Sintaxe:
 
