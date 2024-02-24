@@ -15,6 +15,7 @@ public abstract class Employee extends Person{
         this.wage = wage;
         this.bonus = bonus;
     }
+    
     public abstract void calculateBonus();
 
     @Override
